@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  padding: 1rem;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
