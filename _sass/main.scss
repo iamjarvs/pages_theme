@@ -5,14 +5,84 @@ body {
   padding: 0;
 }
 
-header, main, footer {
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-230px);
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.site-header {
+  background-color: #333;
+  color: white;
   padding: 1rem;
 }
 
-a {
-  color: #0066cc;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title a {
+  color: white;
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+}
+
+.site-nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
 }

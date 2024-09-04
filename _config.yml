@@ -5,3 +5,14 @@ url: ""
 
 # Build settings
 markdown: kramdown
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
