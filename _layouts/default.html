@@ -2,14 +2,23 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include header.html %}
-    <div class="container">
-      {% include sidebar.html %}
-      <main>
-        {{ content }}
-      </main>
-    </div>
-    {% include footer.html %}
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <header>
+      <h1>
+        {% if site.github.repository_name %}
+          {{ site.github.repository_name }}
+        {% else %}
+          {{ site.title | default: "My Jekyll Site" }}
+        {% endif %}
+      </h1>
+      <!-- Rest of your header content -->
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <!-- Your footer content -->
+    </footer>
   </body>
 </html>
